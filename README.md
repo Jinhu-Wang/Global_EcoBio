@@ -109,7 +109,7 @@ After running the script, you should have:
 
 ### 1. Downloaded GeoTIFF Files:
 
-Stored in 'data/2_downloaded_geotiff/DSM'. These are the original tiles before clipping.2. Clipped GeoTIFF Files: Saved in data/3_clipped/DSM. These files are clipped to the AOI boundaries.
+Stored in `data/2_downloaded_geotiff/DSM`. These are the original tiles before clipping.2. Clipped GeoTIFF Files: Saved in data/3_clipped/DSM. These files are clipped to the AOI boundaries.
 
 ### 2. Merged GeoTIFF File:
 
