@@ -56,7 +56,15 @@ conda install geopandas rasterio shapely requests
 
 ## Usage Instructions
 
-- 1. Prepare Input Files:
+1.  Prepare Input Files
 
-  JSON File: Place the JSON file containing tile metadata (tile boundaries, URLs, etc.) in data/0_json/DSM/kaartbladindex.json.
-  Shapefile: Place the shapefile containing the AOI polygon in data/1_shpfiles/. The shapefile should consist of several files (e.g., .shp, .shx, .dbf) with the main file named AWD_sampling_area.shp.
+**JSON File**: Place the JSON file containing tile metadata (tile boundaries, URLs, etc.) in data/0_json/DSM/kaartbladindex.json.
+**Shapefile**: Place the shapefile containing the AOI polygon in data/1_shpfiles/. The shapefile should consist of several files (e.g., .shp, .shx, .dbf) with the main file named AWD_sampling_area.shp.
+
+2.  Run the script
+
+    Execute the script using the command below. Ensure you are in the same directory as dsm.py or provide the full path to it:
+
+    ```bash
+    python dsm.py
+    ```
