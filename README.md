@@ -28,8 +28,6 @@ The script identifies tiles intersecting with the AOI, downloads these tiles, cl
 
 ---
 
----
-
 ## Requirements
 
 Ensure you have the following Python packages installed:
@@ -122,3 +120,7 @@ A single, combined GeoTIFF file named merged_clipped.tif in data/4_merged/DSM, r
 This script is licensed under the MIT License.
 
 ## Contact
+
+For any suggestions and bug reports, please contact:
+Jinhu Wang
+jinhu.wang (at) hotmail (dot) com
