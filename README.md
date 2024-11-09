@@ -24,7 +24,7 @@ This script takes two inputs:
 1. **A JSON file** containing metadata of GeoTIFF tiles, including URLs and spatial boundaries.
 2. **A Shapefile** that defines an area of interest (AOI).
 
-The script identifies tiles intersecting with the AOI, downloads these tiles, clips them to the AOI boundary, and merges them into a single GeoTIFF file.
+The script **identifies tiles intersecting with the AOI**, **downloads these tiles**, **clips them to the AOI boundary**, and **merges** them into a single GeoTIFF file.
 
 ---
 
