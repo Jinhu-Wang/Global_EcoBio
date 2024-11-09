@@ -12,8 +12,6 @@ This Python script automates the process of downloading, clipping, and merging G
 - [Usage Instructions](#usage-instructions)
 - [Script Workflow](#script-workflow)
 - [Output Files](#output-files)
-- [File Structure](#file-structure)
-- [Error Handling](#error-handling)
 - [License](#license)
 
 ---
@@ -114,31 +112,3 @@ Stored in data/2_downloaded_geotiff/DSM. These are the original tiles before cli
 ### 2. Merged GeoTIFF File:
 
 A single, combined GeoTIFF file named merged_clipped.tif in data/4_merged/DSM, representing the AOI as one continuous raster.
-
-## File structure
-
-The directory should be organized as follows:
-
-project_directory/
-│
-├── data/
-│ ├── 0_json/DSM/kaartbladindex.json # JSON file with tile metadata
-│ ├── 1_shpfiles/AWD_sampling_area.shp # Shapefile with AOI
-│ ├── 2_downloaded_geotiff/DSM/ # Folder for downloaded GeoTIFFs
-│ ├── 3_clipped/DSM/ # Folder for clipped GeoTIFFs
-│ └── 4_merged/DSM/ # Folder for the final merged GeoTIFF
-│
-└── dsm.py # Main Python script for DSM
-│
-└── dtm.py # Main Python script for DTM
-
-project_directory/
-│
-├── data/
-│   ├── 0_json/DSM/kaartbladindex.json      # JSON file with tile metadata
-│   ├── 1_shpfiles/AWD_sampling_area.shp    # Shapefile with AOI
-│   ├── 2_downloaded_geotiff/DSM/           # Folder for downloaded GeoTIFFs
-│   ├── 3_clipped/DSM/                      # Folder for clipped GeoTIFFs
-│   └── 4_merged/DSM/                       # Folder for the final merged GeoTIFF
-│
-└── dsm.py                                  # Main Python script
