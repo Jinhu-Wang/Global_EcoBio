@@ -56,7 +56,7 @@ conda install geopandas rasterio shapely requests
 
 ## Usage Instructions
 
-- Item 1 Prepare Input Files:
+- 1. Prepare Input Files:
 
   JSON File: Place the JSON file containing tile metadata (tile boundaries, URLs, etc.) in data/0_json/DSM/kaartbladindex.json.
   Shapefile: Place the shapefile containing the AOI polygon in data/1_shpfiles/. The shapefile should consist of several files (e.g., .shp, .shx, .dbf) with the main file named AWD_sampling_area.shp.
