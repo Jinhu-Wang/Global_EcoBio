@@ -1,6 +1,6 @@
 # Global Ecology & Biodiversity
 
-## DSM GeoTIFF Processing Script
+## DSM/DTM GeoTIFF Processing Script
 
 This Python script automates the process of downloading, clipping, and merging GeoTIFF files, i.e. Digital Terrain Model (DTM) and Digital Surface Model (DSM), using a JSON tile index and a target shapefile. It is designed for users needing to extract specific regions from a larger dataset of GeoTIFF tiles based on area of interest (AOI) boundaries.
 
