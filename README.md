@@ -28,6 +28,8 @@ The script identifies tiles intersecting with the AOI, downloads these tiles, cl
 
 ---
 
+---
+
 ## Requirements
 
 Ensure you have the following Python packages installed:
