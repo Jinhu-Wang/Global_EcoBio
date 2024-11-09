@@ -122,5 +122,7 @@ This script is licensed under the MIT License.
 ## Contact
 
 For any suggestions and bug reports, please contact:
+
 Jinhu Wang
+
 jinhu.wang (at) hotmail (dot) com
