@@ -116,7 +116,7 @@ After running the script, you should have:
 
 A single, combined GeoTIFF file named `merged_clipped.tif` in `data/4_merged/DSM`, representing the AOI as one continuous raster.
 
-The `data` folder of this workflow is shared [HERE](https://surfdrive.surf.nl/files/index.php/s/KWOSUgGYteT6nHO).
+The entire `data` folder of this workflow is shared [HERE](https://surfdrive.surf.nl/files/index.php/s/KWOSUgGYteT6nHO).
 
 ## License
 
