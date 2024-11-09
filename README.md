@@ -56,7 +56,8 @@ conda install geopandas rasterio shapely requests
 
 ### 1. Prepare Input Files
 
-**JSON File**: Place the JSON file containing tile metadata (tile boundaries, URLs, etc.) in data/0_json/DSM/kaartbladindex.json.
+**JSON File**: Place the JSON file containing tile metadata (tile boundaries, URLs, etc.) in data/0_json/DSM/kaartbladindex.json. [json](https://service.pdok.nl/rws/ahn/atom/dsm_05m.xml)
+
 **Shapefile**: Place the shapefile containing the AOI polygon in data/1_shpfiles/. The shapefile should consist of several files (e.g., .shp, .shx, .dbf) with the main file named AWD_sampling_area.shp.
 
 ### 2. Run the script
@@ -112,7 +113,6 @@ Stored in data/2_downloaded_geotiff/DSM. These are the original tiles before cli
 ### 2. Merged GeoTIFF File:
 
 A single, combined GeoTIFF file named merged_clipped.tif in data/4_merged/DSM, representing the AOI as one continuous raster.
-
 
 ## License
 
