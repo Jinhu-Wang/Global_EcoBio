@@ -112,3 +112,8 @@ Stored in data/2_downloaded_geotiff/DSM. These are the original tiles before cli
 ### 2. Merged GeoTIFF File:
 
 A single, combined GeoTIFF file named merged_clipped.tif in data/4_merged/DSM, representing the AOI as one continuous raster.
+
+
+## License
+
+This script is licensed under the MIT License.
