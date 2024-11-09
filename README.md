@@ -79,33 +79,38 @@ The script operates in six main steps:
 
 ### Step 1: Load and Prepare Data
 
-    JSON File: Parses the JSON to extract tile metadata, such as bounding boxes and download URLs.
-    Shapefile: Reads the AOI from the shapefile, ensuring its Coordinate Reference System (CRS) matches that of the tiles.
+JSON File: Parses the JSON to extract tile metadata, such as bounding boxes and download URLs.
+Shapefile: Reads the AOI from the shapefile, ensuring its Coordinate Reference System (CRS) matches that of the tiles.
 
 ### Step 2: Convert JSON Tiles to a GeoDataFrame
 
-    Converts the tile information from the JSON file to a GeoDataFrame, allowing spatial operations.
+Converts the tile information from the JSON file to a GeoDataFrame, allowing spatial operations.
 
 ### Step 3: Identify Intersecting Tiles
 
-    Uses spatial queries to identify tiles in the JSON file that intersect with the AOI defined in the shapefile.
+Uses spatial queries to identify tiles in the JSON file that intersect with the AOI defined in the shapefile.
 
 ### Step 4: Download Intersecting Tiles
 
-    Downloads each intersecting tile as a GeoTIFF file using the URLs in the JSON file, saving them in data/2_downloaded_geotiff/DSM.
+Downloads each intersecting tile as a GeoTIFF file using the URLs in the JSON file, saving them in data/2_downloaded_geotiff/DSM.
 
 ### Step 5: Clip Tiles to AOI
 
-    Clips each downloaded GeoTIFF to the AOI boundary, ensuring each raster covers only the specified region.
-    Clipped rasters are saved in data/3_clipped/DSM.
+Clips each downloaded GeoTIFF to the AOI boundary, ensuring each raster covers only the specified region.
+Clipped rasters are saved in data/3_clipped/DSM.
 
 ### Step 6: Merge Clipped GeoTIFFs
 
-    Merges all clipped GeoTIFFs into a single output file, saved as merged_clipped.tif in data/4_merged/DSM.
+Merges all clipped GeoTIFFs into a single output file, saved as merged_clipped.tif in data/4_merged/DSM.
 
 ## Output files
 
 After running the script, you should have:
 
-1. Downloaded GeoTIFF Files: Stored in data/2_downloaded_geotiff/DSM. These are the original tiles before clipping.2. Clipped GeoTIFF Files: Saved in data/3_clipped/DSM. These files are clipped to the AOI boundaries.
-2. Merged GeoTIFF File: A single, combined GeoTIFF file named merged_clipped.tif in data/4_merged/DSM, representing the AOI as one continuous raster.
+### 1. Downloaded GeoTIFF Files:
+
+Stored in data/2_downloaded_geotiff/DSM. These are the original tiles before clipping.2. Clipped GeoTIFF Files: Saved in data/3_clipped/DSM. These files are clipped to the AOI boundaries.
+
+### 2. Merged GeoTIFF File:
+
+A single, combined GeoTIFF file named merged_clipped.tif in data/4_merged/DSM, representing the AOI as one continuous raster.
