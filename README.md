@@ -1,11 +1,11 @@
 # Global Ecology & Biodiversity
 
-
 ## DSM GeoTIFF Processing Script
 
 This Python script automates the process of downloading, clipping, and merging GeoTIFF files using a JSON tile index and a target shapefile. It is designed for users needing to extract specific regions from a larger dataset of GeoTIFF tiles based on area of interest (AOI) boundaries.
 
 ## Table of Contents
+
 - [Overview](#overview)
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -21,6 +21,7 @@ This Python script automates the process of downloading, clipping, and merging G
 ## Overview
 
 This script takes two inputs:
+
 1. **A JSON file** containing metadata of GeoTIFF tiles, including URLs and spatial boundaries.
 2. **A Shapefile** that defines an area of interest (AOI).
 
@@ -39,12 +40,14 @@ Ensure you have the following Python packages installed:
 
 You can install them using:
 
+**pip**
+
 ```bash
 pip install geopandas rasterio shapely requests
 ```
-or using conda
+
+or using **conda**
 
 ```bash
 conda install geopandas rasterio shapely requests
 ```
-
