@@ -64,7 +64,7 @@ conda install geopandas rasterio shapely requests
 Execute the script using the command below. Ensure you are in the same directory as dsm.py or provide the full path to it:
 
 ```bash
-python dsm.py
+    python dsm.py
 ```
 
 ### 3. Directory Structure and Results:
