@@ -42,7 +42,7 @@ You can install the required packages using:
 
 **pip**
 
-```javascript {.line-numbers}
+```bash
 pip install geopandas rasterio shapely requests
 ```
 
