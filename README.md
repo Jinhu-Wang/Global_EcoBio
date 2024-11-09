@@ -56,15 +56,56 @@ conda install geopandas rasterio shapely requests
 
 ## Usage Instructions
 
-### 1.  Prepare Input Files
+### 1. Prepare Input Files
 
 **JSON File**: Place the JSON file containing tile metadata (tile boundaries, URLs, etc.) in data/0_json/DSM/kaartbladindex.json.
 **Shapefile**: Place the shapefile containing the AOI polygon in data/1_shpfiles/. The shapefile should consist of several files (e.g., .shp, .shx, .dbf) with the main file named AWD_sampling_area.shp.
 
-2.  Run the script
+### 2. Run the script
 
 Execute the script using the command below. Ensure you are in the same directory as dsm.py or provide the full path to it:
 
     ```bash
     python dsm.py
     ```
+
+### 3. Directory Structure and Results:
+
+Downloaded, clipped, and merged GeoTIFF files will be saved in designated folders (data/2_downloaded_geotiff/DSM, data/3_clipped/DSM, and data/4_merged/DSM).
+
+## Script workflow
+
+The script operates in six main steps:
+
+### Step 1: Load and Prepare Data
+
+    JSON File: Parses the JSON to extract tile metadata, such as bounding boxes and download URLs.
+    Shapefile: Reads the AOI from the shapefile, ensuring its Coordinate Reference System (CRS) matches that of the tiles.
+
+### Step 2: Convert JSON Tiles to a GeoDataFrame
+
+    Converts the tile information from the JSON file to a GeoDataFrame, allowing spatial operations.
+
+### Step 3: Identify Intersecting Tiles
+
+    Uses spatial queries to identify tiles in the JSON file that intersect with the AOI defined in the shapefile.
+
+### Step 4: Download Intersecting Tiles
+
+    Downloads each intersecting tile as a GeoTIFF file using the URLs in the JSON file, saving them in data/2_downloaded_geotiff/DSM.
+
+### Step 5: Clip Tiles to AOI
+
+    Clips each downloaded GeoTIFF to the AOI boundary, ensuring each raster covers only the specified region.
+    Clipped rasters are saved in data/3_clipped/DSM.
+
+### Step 6: Merge Clipped GeoTIFFs
+
+    Merges all clipped GeoTIFFs into a single output file, saved as merged_clipped.tif in data/4_merged/DSM.
+
+## Output files
+
+After running the script, you should have:
+
+1. Downloaded GeoTIFF Files: Stored in data/2_downloaded_geotiff/DSM. These are the original tiles before clipping.2. Clipped GeoTIFF Files: Saved in data/3_clipped/DSM. These files are clipped to the AOI boundaries.
+2. Merged GeoTIFF File: A single, combined GeoTIFF file named merged_clipped.tif in data/4_merged/DSM, representing the AOI as one continuous raster.
