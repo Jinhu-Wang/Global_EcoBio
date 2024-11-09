@@ -117,7 +117,7 @@ A single, combined GeoTIFF file named `merged_clipped.tif` in `data/4_merged/DSM
 
 ## License
 
-This script is licensed under the MIT License.
+[Apache-2.0 license](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Contact
 
