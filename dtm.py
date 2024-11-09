@@ -16,6 +16,7 @@ download_dir = 'data/2_downloaded_geotiff/DTM'
 output_clipped_dir = 'data/3_clipped/DTM'
 output_merged_dir = 'data/4_merged/DTM'
 
+# Make the directories if they don't exist
 os.makedirs(download_dir, exist_ok=True)
 os.makedirs(output_clipped_dir, exist_ok=True)
 os.makedirs(output_merged_dir, exist_ok=True)
@@ -93,4 +94,5 @@ with rasterio.open(merged_output_path, "w", **out_meta) as dest:
 for src in src_files_to_mosaic:
     src.close()
 
+# Print the path to the merged file
 print(f"Merged file saved to {merged_output_path}")
