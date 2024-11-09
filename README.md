@@ -41,3 +41,10 @@ You can install them using:
 
 ```bash
 pip install geopandas rasterio shapely requests
+```
+or using conda
+
+```bash
+conda install geopandas rasterio shapely requests
+```
+
