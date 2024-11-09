@@ -38,7 +38,9 @@ Ensure you have the following Python packages installed:
 - **shapely**: For geometric operations.
 - **requests**: For downloading files from the web.
 
-You can install them using:
+## Installation
+
+You can install the required packages using:
 
 **pip**
 
@@ -46,8 +48,15 @@ You can install them using:
 pip install geopandas rasterio shapely requests
 ```
 
-or using **conda**
+or **conda**
 
 ```bash
 conda install geopandas rasterio shapely requests
 ```
+
+## Usage Instructions
+
+- Item 1 Prepare Input Files:
+
+  JSON File: Place the JSON file containing tile metadata (tile boundaries, URLs, etc.) in data/0_json/DSM/kaartbladindex.json.
+  Shapefile: Place the shapefile containing the AOI polygon in data/1_shpfiles/. The shapefile should consist of several files (e.g., .shp, .shx, .dbf) with the main file named AWD_sampling_area.shp.
