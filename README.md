@@ -68,6 +68,10 @@ Execute the script using the command below. Ensure you are in the same directory
 ```bash
     python dsm.py
 ```
+or 
+```bash 
+    python dtm.py
+```
 
 ### 3. Directory Structure and Results:
 
