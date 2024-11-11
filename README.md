@@ -68,8 +68,10 @@ Execute the script using the command below. Ensure you are in the same directory
 ```bash
     python dsm.py
 ```
-or 
-```bash 
+
+or
+
+```bash
     python dtm.py
 ```
 
@@ -84,6 +86,7 @@ The script operates in six main steps:
 ### Step 1: Load and Prepare Data
 
 JSON File: Parses the JSON to extract tile metadata, such as bounding boxes and download URLs.
+
 Shapefile: Reads the AOI from the shapefile, ensuring its Coordinate Reference System (CRS) matches that of the tiles.
 
 ### Step 2: Convert JSON Tiles to a GeoDataFrame
