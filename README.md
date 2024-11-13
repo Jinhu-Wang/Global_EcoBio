@@ -28,7 +28,7 @@ The script **identifies tiles intersecting with the AOI**, **downloads these til
 
 ## Requirements
 
-Ensure you have the following Python packages installed:
+Ensure to have the following Python packages installed:
 
 - **geopandas**: For handling geographic data, including shapefiles.
 - **rasterio**: For handling raster data, such as GeoTIFF files.
@@ -75,7 +75,7 @@ or
 
 ### 3. Directory Structure and Results:
 
-Downloaded, clipped, and merged GeoTIFF files will be saved in designated folders (`data/2_downloaded_geotiff/DSM`, `data/3_clipped/DSM`, and `data/4_merged/DSM`).
+Downloaded, clipped, and merged GeoTIFF files of DSM will be saved in designated folders (`data/2_downloaded_geotiff/DSM`, `data/3_clipped/DSM`, and `data/4_merged/DSM`). The similar to that of DTM.
 
 ## Script workflow
 
@@ -97,16 +97,16 @@ Uses spatial queries to identify tiles in the JSON file that intersect with the 
 
 ### Step 4: Download Intersecting Tiles
 
-Downloads each intersecting tile as a GeoTIFF file using the URLs in the JSON file, saving them in `data/2_downloaded_geotiff/DSM`.
+Downloads each intersecting DSM tile as a GeoTIFF file using the URLs in the JSON file, saving them in `data/2_downloaded_geotiff/DSM`. 
 
 ### Step 5: Clip Tiles to AOI
 
 Clips each downloaded GeoTIFF to the AOI boundary, ensuring each raster covers only the specified region.
-Clipped rasters are saved in `data/3_clipped/DSM`.
+Clipped DSM rasters are saved in `data/3_clipped/DSM`.
 
 ### Step 6: Merge Clipped GeoTIFFs
 
-Merges all clipped GeoTIFFs into a single output file, saved as merged_clipped.tif in `data/4_merged/DSM`.
+Merges all clipped GeoTIFFs of DSM into a single output file, saved as merged_clipped.tif in `data/4_merged/DSM`.
 
 ## Output files
 
@@ -114,14 +114,20 @@ After running the script, you should have:
 
 ### 1. Downloaded GeoTIFF Files:
 
-1. Stored in `data/2_downloaded_geotiff/DSM`. These are the original tiles before clipping.
-2. Clipped GeoTIFF Files: Saved in `data/3_clipped/DSM`. These files are clipped to the AOI boundaries.
+Downloaded GeoTiff files of DSM are stored in `data/2_downloaded_geotiff/DSM`. These are the original tiles before clipping.
 
-### 2. Merged GeoTIFF File:
+### 2. Clipped GeoTiff files:
 
-A single, combined GeoTIFF file named `merged_clipped.tif` in `data/4_merged/DSM`, representing the AOI as one continuous raster.
+Clipped GeoTIFF Files of DSM: Saved in `data/3_clipped/DSM`. These files are clipped to the AOI boundaries.
+
+### 3. Merged GeoTIFF File:
+
+A single, combined GeoTIFF file of DSM is named `merged_clipped.tif` in `data/4_merged/DSM`, representing the AOI as one continuous raster.
 
 The entire `data` folder of this workflow is shared [HERE](https://surfdrive.surf.nl/files/index.php/s/KWOSUgGYteT6nHO).
+
+**Note:** The above examples are using DSMs. For DTMs, the input (JSON and shapefiles) and output directory of DTM should be given correspondingly.
+
 
 ## License
 
