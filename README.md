@@ -126,7 +126,7 @@ A single, combined GeoTIFF file of DSM is named `merged_clipped.tif` in `data/4_
 
 The entire `data` folder of this workflow is shared [HERE](https://surfdrive.surf.nl/files/index.php/s/KWOSUgGYteT6nHO).
 
-**Note:** The above examples are using DSMs. For DTMs, the input (JSON and shapefiles) and output directory of DTM should be given correspondingly.
+**Note: The above examples are using DSMs. For DTMs, the input (JSON and shapefiles) and output directory of DTM should be given correspondingly.**
 
 
 ## License
